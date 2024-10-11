@@ -26,4 +26,17 @@
    > (define c #f)
    > (+ 1 (+ 2 (+ 3 (+ (let/cc k (set! c k) 4) 5))))
    > (c 10)
-   
+   ```
+
+3. Realizar los siguientes ejercicios en **Haskell**:
+   - Definir la función recurisva `ocurrenciasElementos` que toma como argumentos dos listas y devuelve una lista de parejas, en donde cada pareja contiene en su parte izquierda un elemento de la segunda lista y en su parte derechael número de veces que aparece dicho elemento en la primera lista. Por ejemplo:
+
+     ```haskell
+     > ocurrenciasElementos [1,3,6,2,4,7,3,9,7] [5,2,3]
+     [(5,0),(2,1),(3,2)]
+     ```
+   - Mostrar los registros de activación generados por la función definida en el ejercicio anterior con la llamada `ocurrenciasElementos [1,2,3] [1,2]`.
+     
+   - Optimizar la función definida usando recursión de cola. Deben transformar todas las funciones auxiliares que utilicen.
+     
+   - Mostrar los registros de activación generados por la versión de cola con la misma llamada.
